@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(../imgs/REzRU3YM.jfif);
+    background-size: cover;
+    background-position:center ;
+}
+.navbar {
+    width: 90%;
+    margin: auto;
+    padding: 20px 10px 10px 10px;;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-size: 50px;
+}
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background:rgba(207, 119, 18, 0.801) ;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    text-align:center ;
+    color: #fff;
+    position: absolute;
+    top: 35%;
+}
+.content h1{
+    text-transform: uppercase;
+    font-size: 52px;
+    margin-bottom: 20px;
+}
+.content p{
+    text-transform: capitalize;
+        line-height: 25px;
+        font-size: 18px;
+}
+.button {
+    display: inline-block;
+    border-radius: 50px;
+    background-color: transparent;
+    border: 2px rgba(207, 119, 18, 0.801) solid;
+    /* border-color: rgba(207, 119, 18, 0.801); */
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px;
+    width: 140px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 20px;
+    /* position: absolute;
+    top: 60%;
+    left: 50%; */
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 18px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
