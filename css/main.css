@@ -172,7 +172,7 @@ body {
     position: sticky;
     top: 0px;
     z-index: 99;
-    box-shadow:-40px 0px 0px 0px #f9f9f9, 40px 0px 0px 0px #f9f9f9, 0px 0px 15px -10px rgb(0 0 0);
+    box-shadow:-40px 0px 0px 0px #f9f9f9, 40px 0px 0px 0px #f9f9f9, 0px -55px 20px 40px rgb(0 0 0);
     /* margin: 0px 0px 0px -20px; */
 }
 .logof{
@@ -490,18 +490,121 @@ aside ul li:hover::after{
 
 .contentp{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 95%;
+    flex-direction: row;
+    /* align-items: center; */
+    width: 100%;
+    margin-top: 70px;
+    gap: 80px;
 }
 .contentp1{
-    width:100%;
+    width:280px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 80px;
-    /* margin-left: 150px; */
+    /* margin-top: 20px; */
+    margin-left: 50px;
 }
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    gap: 40px;
+}
+.form1{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 40px;
+}
+label {
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    color: #3a7e99;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+.fnamcon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.lnamecon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.flcon{
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+.passcon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.emailcon{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+input[type=text]{
+    width: 155px;
+    border: none;
+    border-bottom: 2px solid #3a7e99;
+    background:transparent;
+    font-size: 16px;
+    padding: 0px 0px 2px 4px;
+    font-family: 'Poppins', sans-serif;
+}
+input[type=email]{
+    width: 335px;
+    border: none;
+    border-bottom: 2px solid #3a7e99;
+    background:#EEE;
+    font-size: 16px;
+    padding: 0px 0px 2px 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
+input[type=password]{
+    width: 335px;
+    border: none;
+    border-bottom: 2px solid #3a7e99;
+    background:transparent;
+    font-size: 16px;
+    padding: 0px 0px 2px 4px;
+    font-family: 'Poppins', sans-serif;
+}
+input[type=submit]{
+    /* background-color: #06adca; */
+    background-color: transparent;
+    color: #06adca;
+    border-color: #3a7e99;
+    border: none;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 100px;
+    font-size: 22px;
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 5px 20px;
+}
+input[type=submit]:hover{
+    box-shadow:0px 2px 10px #00000031;
+    margin-top: -2px
+}
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+
+
 .picpic{
     width: 280px;
     height: 280px;
@@ -559,17 +662,15 @@ aside ul li:hover::after{
 
 ::-webkit-scrollbar{
     width: 8px;
-    /* display: none; */
 }
 ::-webkit-scrollbar:hover{
     display: inline-block;
 }
 ::-webkit-scrollbar-track{
-    background-color: #eee;
+    background-color: #f9f9f9;
 }
 ::-webkit-scrollbar-thumb{
     background-color: rgba(0, 204, 240, 0.5);
-    /* border-radius: 50px; */
 }
 ::-webkit-scrollbar-thumb:hover{
     background-color: rgba(0, 204, 240);
