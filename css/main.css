@@ -95,6 +95,12 @@ body {
         /* margin-left: 250px; */
 }
 
+.buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
 .button {
     display: inline-block;
     border-radius: 50px;
@@ -332,6 +338,15 @@ aside ul li:hover::after{
     margin-top: 4px;
     margin-bottom: 20px;
 }
+.linef3 {
+    height: 1px;
+    background-image: linear-gradient( 
+    90deg,rgba(0,0,0,0.00) 0%,#3a7e99 50%,rgba(0,0,0,0.00) 100%);
+    opacity: 0.4;
+    width: 100%;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
 
 
 
@@ -490,13 +505,21 @@ aside ul li:hover::after{
 
 .contentp{
     display: flex;
-    flex-direction: row;
-    /* align-items: center; */
-    width: 100%;
+    flex-direction: column;
+    /* width: 100%; */
     margin-top: 70px;
+}
+.contentpp1,
+.contentpp2{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
     gap: 80px;
 }
-.contentp1{
+.contentps3{
+    width: 100%;
+}
+.contentps1{
     width:280px;
     display: flex;
     flex-direction: column;
@@ -586,8 +609,7 @@ input[type=submit]{
     /* background-color: #06adca; */
     background-color: transparent;
     color: #06adca;
-    border-color: #3a7e99;
-    border: none;
+    border:2px #3a7e99 solid;
     font-family: 'Poppins', sans-serif;
     border-radius: 100px;
     font-size: 22px;
@@ -655,7 +677,7 @@ input:focus, textarea:focus, select:focus{
     color: #3a7e99;
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
-    letter-spacing: 5px;
+    letter-spacing: 6px;
     font-size: 16px;
     text-align: center;
 }
