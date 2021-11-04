@@ -38,13 +38,17 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 20px;
+    gap: 30px;
 }
 .formcontainer{
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-left: 45px;
+}
+.RemeberForget p,
+.loginh2 span{
+    transition: all,0.3s;
 }
 .formcontainer p span:hover,
 .RemeberForget p:hover{
@@ -64,6 +68,7 @@ body {
     color: #3a7e99;
     font-size: 74px;
     margin:40px 0px 0px 40px;
+    letter-spacing: -2px;
 }
 .loginh2,
 .RemeberForget p{
@@ -78,14 +83,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 40px;
+    margin-top: 30px;
 }
 .emailconlog{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
 }
-#email{
+#email1{
     width: 335px;
     border: none;
     border-bottom: 2px solid #3a7e99;
@@ -93,9 +98,10 @@ body {
     font-size: 16px;
     padding: 0px 0px 2px 4px;
     font-family: 'Poppins', sans-serif;
+    color: #06bdde;
 }
 
-input[type=password]{
+#password1{
     width: 335px;
     border: none;
     border-bottom: 2px solid #3a7e99;
@@ -103,6 +109,7 @@ input[type=password]{
     font-size: 16px;
     padding: 0px 0px 2px 4px;
     font-family: 'Poppins', sans-serif;
+    color: #06bdde;
 }
 #login{
     /* background-color: #06adca; */
@@ -115,11 +122,13 @@ input[type=password]{
     font-size: 20px;
     cursor: pointer;
     transition: all 0.3s;
-    padding: 2px 15px;
+    padding: 5px 20px;
     margin-top: 30px;
 }
 #login:hover{
-    box-shadow:0px 2px 10px #00000031;
+    background-color:#06adca ;
+    color: #f9f9f9;
+    /* box-shadow:0px 20px 10px #00000031; */
     /* margin-top: -2px */
 }
 .RemeberForget{
@@ -129,6 +138,73 @@ input[type=password]{
     justify-content: space-between;
     margin-top: 15px;
 }
+.cirs1{
+    width: 170px;
+    height: 170px;
+    background-color: #5ebfbc;
+    border-radius: 50%;
+    position: absolute;
+    top: -120px;
+    left: 70px;
+    z-index: 99;
+}
+.cirs2{
+    width: 270px;
+    height: 270px;
+    background-color: #3a7e99;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -65px;
+    right: -50px;
+}
+.cirs3{
+    width: 470px;
+    height: 470px;
+    background-color: #d4fffe;
+    border-radius: 50%;
+    position: absolute;
+    top: -335px;
+    right: 0px;
+}
+/* input[type="checkbox"] {
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+  } */
+  /* input[type="checkbox"] {
+    appearance: none;
+    background-color: #fff;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 15px;
+    height: 15px;
+    border: 1px #3A7E99 solid;
+    border-radius: 0.15em;
+    transform: translateY(1.75px);
+    place-content: center;
+    display: grid;
+  } */
+  
+  /* .form-control + .form-control {
+    margin-top: 1em;
+  }
+
+  input[type="checkbox"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+    transform-origin: bottom left;
+    clip-path: polygon(14% 44%, 0 65%, 50% 100%, 100% 16%, 80% 0%, 43% 62%);
+}
+  input[type="checkbox"]:checked::before {
+    transform: scale(1);
+} */
+
 /* input:checked ~ .checkmark {
     background-color: #2196F3;
   } */
@@ -142,10 +218,11 @@ input[type=password]{
     display: flex;
     align-items: center;
     justify-content: center;
+    overflow: hidden;
 }
 .loginlogo{
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
     position: absolute;
     /* top: 0%;
     left: 0%; */
@@ -161,7 +238,7 @@ input[type=password]{
 }
 
 .navbar {
-    width: 95%;
+    width: 96%;
     margin: auto;
     padding: 5px 0px 5px 0px;
     display: flex;
@@ -306,7 +383,7 @@ input[type=password]{
     box-shadow: 0px 0px 10px 0px #00000018;
 }
 .navbarf {
-    width: 95%;
+    width: 96%;
     margin: auto;
     padding: 5px 0px 5px 0px;
     background-color: #f9f9f9;
@@ -361,13 +438,17 @@ input[type=password]{
 }
 
 .contentfandaside{
-    width: 95%;
+    width: 96%;
     display: flex;
     /* margin-left: -35px; */
 }
 aside{
     /* width: 10%; */
+    background-color: #f9f9f9;
+    height: 30%;
     margin-right: 35px;
+    position: sticky;
+    top: 50px;
     /* border-right: 1px #eee solid; */
 }
 aside ul{
@@ -375,13 +456,15 @@ aside ul{
     flex-direction: column;
     align-items: flex-start;
     flex-wrap: nowrap;
-    position: sticky;
-    top: 50px;
+    gap: 70px;
+    margin-top: 70px;
+    /* position: sticky;
+    top: 50px; */
 }
 aside ul li{
     list-style: none;
     /* display: inline-block; */
-    margin-top: 70px;
+    /* margin-top: 70px; */
     position: relative;
 }
 aside ul li a{
@@ -389,7 +472,7 @@ aside ul li a{
     color: #00ccf0;
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
-    font-weight: 400;
+    font-weight: 500;
     font-size: 16px;
 }
 aside ul li::after{
@@ -429,7 +512,7 @@ aside ul li:hover::after{
     margin: 63px 0px 20px 0px ;
 }
 
-.contentf .contentf1 div div{
+.pr1{
     /* margin: 40px 10px; */
     height: 220px;
     width: 275px;
@@ -438,12 +521,31 @@ aside ul li:hover::after{
     cursor: pointer;
     transition: all 0.3s;
 }
-.contentf .contentf1 div p{
-    margin-top: 230px;
+.pp1container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2px;
+}
+.pp1container span{
+    /* margin: -30px 10px 0 0; */
+    margin: -30px 4px 0 -40px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+    color: #3a7e99;
+    /* font-size: 14px; */
+}
+.pp1container span span{
+    font-size: 12px;
+    /* font-size: 14px; */
+}
+.pp1{
+    /* margin-top: 230px; */
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     color: #3a7e99;
 }
+
 .pr {
     display: flex;
     flex-direction: row;
@@ -451,7 +553,7 @@ aside ul li:hover::after{
     justify-content: flex-start;
     margin-top: 20px;
     margin-bottom: 50px;
-    gap:75px 12px;
+    gap:55px 15px;
 }
 .pr1:hover{
     box-shadow: 0px 0px 20px #00000018;
@@ -625,22 +727,21 @@ aside ul li:hover::after{
     margin-bottom: 40px;
     gap: 75px 12px;
 }
-.contentg .contentg1 div div{
-    /* margin: 40px 10px; */
+/* .contentg .contentg1 div div{
     height: 220px;
-    width: 270px;
+    width: 275px;
     border:1px #06adca solid ;
     border-radius: 5px;
     cursor: pointer;
     transition: all 0.3s;
-}
-.contentg .contentg1 div p{
+} */
+/* .contentg .contentg1 div p{
     margin-top: 230px;
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     color: #3a7e99;
-}
-.contentg .contentg1 div span p {
+} */
+.pr1g p {
     margin: 5px;
     padding: 0px;
     text-align: center;
@@ -650,9 +751,9 @@ aside ul li:hover::after{
     font-size: 150px;
     color: #a3f1ff;
 }
-.contentg .contentg1 div span{
+.pr1g{
     height: 220px;
-    width: 290px;
+    width: 275px;
     border:1px #a3f1ff solid ;
     border-radius: 5px;
     cursor: pointer;
