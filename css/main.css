@@ -220,6 +220,57 @@ body {
     justify-content: center;
     overflow: hidden;
 }
+.leftside1{
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.leftside1 div{
+    width: 625px;
+    height: 530px;
+    border-radius: 50px;
+    background-color: transparent;
+    animation-name: example;
+    animation-duration: 30s;
+    animation-iteration-count: 30;
+}
+@keyframes example {
+    15%   {background-image: url(../imgs/GDND48/Newfolder2/Untitled-1.png);
+    background-size: 730px;
+    background-position-x: center;
+    background-position-y: center;
+    }
+    17%  {background-image: url(../imgs/GDND48/Newfolder2/Untitled-2.png);
+    background-size: 730px;
+    background-position-x: center;
+    background-position-y: center;
+}
+    45%  {background-image: url(../imgs/GDND48/Newfolder2/Untitled-3.png);
+    background-size: 730px;
+    background-position-x: center;
+    background-position-y: center;
+}
+    80%  {background-image: url(../imgs/GDND48/Newfolder2/Untitled-4.png);
+    background-size: 730px;
+    background-position-x: center;
+    background-position-y: center;
+}
+    85%  {background-image: url(../imgs/GDND48/Newfolder2/Untitled-5.png);
+    background-size: 730px;
+    background-position-x: center;
+    background-position-y: center;
+}
+    100% {background-image: url(../imgs/GDND48/Newfolder2/Untitled-6.png);
+    background-size: 730px;
+    background-position-x: center;
+    background-position-y: center;
+}
+  }
 .loginlogo{
     width: 200px;
     height: 200px;
@@ -251,10 +302,11 @@ body {
     height: 40px;
 }
 .logo{
-    width: 40px;
-    height: 40px;
+    width: 90.86px;
+    height: 32.14px;
     cursor: pointer;
     background-size: 50px;
+    /* size: 100px; */
     /* padding-left:35px ; */
 }
 .navbar ul li{
@@ -397,8 +449,8 @@ body {
     /* margin: 0px 0px 0px -20px; */
 }
 .logof{
-    width: 40px;
-    height: 40px;
+    width: 90.86px;
+    height: 32.14px;
     cursor: pointer;
     background-size: 50px;
     /* padding-left:35px ; */
