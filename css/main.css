@@ -47,10 +47,12 @@ body {
     margin-left: 45px;
 }
 .RemeberForget p,
-.loginh2 span{
+.loginh2,
+.loginh2 a {
+    text-decoration: none;
     transition: all,0.3s;
 }
-.formcontainer p span:hover,
+.formcontainer p a:hover,
 .RemeberForget p:hover{
     cursor: pointer;
     color: #06adca;
@@ -70,6 +72,11 @@ body {
     margin:40px 0px 0px 40px;
     letter-spacing: -2px;
 }
+.loginh2 a{
+    font-family: 'Poppins', sans-serif;
+    color: #3a7e99;
+    font-size: 14px;
+}
 .loginh2,
 .RemeberForget p{
     font-family: 'Poppins', sans-serif;
@@ -79,21 +86,35 @@ body {
 .loginh2{
     margin-top: 5px;
 }
-.passconlog{
+.passconlog,
+.lnamelog{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-top: 30px;
+    margin-top: 15px;
 }
+#fnamelog,
+#lnamelog{
+    width: 155px;
+    color: #06bdde;
+    border: none;
+    border-bottom: 0.1em solid #3a7e99;
+    background:transparent;
+    font-size: 16px;
+    padding: 0px 0px 2px 4px;
+    font-family: 'Poppins', sans-serif;
+}
+
 .emailconlog{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin-top: 15px;
 }
 #email1{
     width: 335px;
     border: none;
-    border-bottom: 2px solid #3a7e99;
+    border-bottom: 0.1em solid #3a7e99;
     background:transparent;
     font-size: 16px;
     padding: 0px 0px 2px 4px;
@@ -104,7 +125,7 @@ body {
 #password1{
     width: 335px;
     border: none;
-    border-bottom: 2px solid #3a7e99;
+    border-bottom: 0.1em solid #3a7e99;
     background:transparent;
     font-size: 16px;
     padding: 0px 0px 2px 4px;
@@ -233,39 +254,41 @@ body {
 .leftside1 div{
     width: 625px;
     height: 530px;
-    border-radius: 50px;
+    border-radius: 50px 50px 0 0;
     background-color: transparent;
-    animation-name: example;
-    animation-duration: 30s;
-    animation-iteration-count: 30;
+    animation-name: AboutGdnd48;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    /* animation-play-state:ease ; */
+    animation-timing-function: cubic-bezier(0.28, 0.03, 0.78, 0.95);
 }
-@keyframes example {
-    15%   {background-image: url(../imgs/GDND48/Newfolder2/Untitled-1.png);
-    background-size: 730px;
+@keyframes AboutGdnd48 {
+    15%   {background-image: url(../imgs/GDND48/Newfolder2/untitled_1.png);
+    background-size: 700px;
     background-position-x: center;
     background-position-y: center;
     }
-    17%  {background-image: url(../imgs/GDND48/Newfolder2/Untitled-2.png);
+    17%  {background-image: url(../imgs/GDND48/Newfolder2/Untitled_2.png);
+    background-size: 760px;
+    background-position-x: center;
+    background-position-y: center;
+}
+    45%  {background-image: url(../imgs/GDND48/Newfolder2/Untitled_3.png);
+    background-size: 760px;
+    background-position-x: center;
+    background-position-y: center;
+}
+    80%  {background-image: url(../imgs/GDND48/Newfolder2/Untitled_4.png);
+    background-size: 760px;
+    background-position-x: center;
+    background-position-y: center;
+}
+    82%  {background-image: url(../imgs/GDND48/Newfolder2/Untitled_5.png);
     background-size: 730px;
     background-position-x: center;
     background-position-y: center;
 }
-    45%  {background-image: url(../imgs/GDND48/Newfolder2/Untitled-3.png);
-    background-size: 730px;
-    background-position-x: center;
-    background-position-y: center;
-}
-    80%  {background-image: url(../imgs/GDND48/Newfolder2/Untitled-4.png);
-    background-size: 730px;
-    background-position-x: center;
-    background-position-y: center;
-}
-    85%  {background-image: url(../imgs/GDND48/Newfolder2/Untitled-5.png);
-    background-size: 730px;
-    background-position-x: center;
-    background-position-y: center;
-}
-    100% {background-image: url(../imgs/GDND48/Newfolder2/Untitled-6.png);
+    100% {background-image: url(../imgs/GDND48/Newfolder2/Untitled_6.png);
     background-size: 730px;
     background-position-x: center;
     background-position-y: center;
@@ -497,7 +520,8 @@ body {
 aside{
     /* width: 10%; */
     background-color: #f9f9f9;
-    height: 30%;
+    /* height: 30%; */
+    height: 500px;
     margin-right: 35px;
     position: sticky;
     top: 50px;
