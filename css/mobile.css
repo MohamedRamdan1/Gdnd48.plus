@@ -6,53 +6,66 @@
     position: relative;
 }
 .rightside {
-    width: 40%;
+    width: 100%;
     height: 100%;
     background-color: #f9f9f9;
     position: absolute;
     right: 0px;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    gap: 10px;
+    gap: 15px;
 }
-.loginh1{
+.loginh1 {
     font-family: 'Aclonica', sans-serif;
     color: #3a7e99;
-    font-size: 20px;
-    margin:10px 0px 0px 10px;
+    font-size: 50px;
+    margin: 15px 0px 0px 15px;
     letter-spacing: -2px;
+}
+.loginh2{
+        margin-top: 0px;
 }
 .formcontainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 label {
     font-family: 'Poppins', sans-serif;
     text-transform: capitalize;
     color: #3a7e99;
-    font-size: 6px;
+    font-size: 12px;
     font-weight: 400;
 }
-#email1 {
-    width: 160px;
+#fnamelog, #lnamelog {
+    width: calc(225px/2);
+    color: #06bdde;
     border: none;
     border-bottom: 0.1em solid #3a7e99;
     background: transparent;
-    font-size: 8px;
+    font-size: 12px;
+    padding: 0px 0px 2px 4px;
+    font-family: 'Poppins', sans-serif;
+}
+#email1 {
+    width: 250px;
+    border: none;
+    border-bottom: 0.1em solid #3a7e99;
+    background: transparent;
+    font-size: 12px;
     padding: 0px 0px 2px 4px;
     font-family: 'Poppins', sans-serif;
     color: #06bdde;
 }
 #password1 {
-    width: 160px;
+    width: 250px;
     border: none;
     border-bottom: 0.1em solid #3a7e99;
     background: transparent;
-    font-size: 8px;
+    font-size: 12px;
     padding: 0px 0px 2px 4px;
     font-family: 'Poppins', sans-serif;
     color: #06bdde;
@@ -70,21 +83,37 @@ label {
     border: none;
     font-family: 'Poppins', sans-serif;
     border-radius: 100px;
-    font-size: 10px;
+    font-size: 14px;
     cursor: pointer;
     transition: all 0.3s;
     padding: 5px 20px;
     margin-top: 10px;
 }
-.loginh2, .RemeberForget p {
+.loginh2,
+.RemeberForget p {
     font-family: 'Poppins', sans-serif;
     color: #3a7e99;
-    font-size: 8px;
+    font-size: 12px;
 }
 .loginh2 a {
     font-family: 'Poppins', sans-serif;
     color: #3a7e99;
-    font-size: 8px;
+    font-size: 12px;
+}
+.leftside {
+    width: 60%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    display: none;
+}
+.leftside1 div,
+.leftside1{
+    display: none;
 }
 
 
@@ -98,12 +127,11 @@ label {
     /* margin: 0px 0px 0px -20px; */
 }
 .wahm{
-    width: 20px;
-    height: 20px;
+    display: none;
 }
 .logo{
-    width: 25.44px;
-    height: 9px;
+    width: 30.89px;
+    height: 10.93px;
     cursor: pointer;
     background-size: 30px;
     /* size: 100px; */
@@ -121,7 +149,7 @@ label {
     text-transform: uppercase;
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
-    font-size: 8px;
+    font-size: 10px;
 }
 .navbar ul li::after{
     content: "";
@@ -136,9 +164,17 @@ label {
 .navbar ul li:hover::after{
     width: 100%;
 }
+.content {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-top: 130px;
+    flex-direction: column;
+}
 .content h1{
     text-transform: uppercase;
-    font-size: 18px;
+    font-size: 22px;
     font-family: 'Poppins', sans-serif;
     font-weight: 800;
     margin-bottom: 10px;
@@ -146,7 +182,7 @@ label {
 .content p{
         text-transform: capitalize;
         line-height: 25px;
-        font-size: 8px;
+        font-size: 10px;
         font-family: 'Poppins', sans-serif;
         font-weight: 200;
         margin-bottom: 20px;
@@ -167,18 +203,16 @@ label {
     /* border-color: rgba(207, 119, 18, 0.801); */
     color: #FFFFFF;
     text-align: center;
-    font-size: 8px;
+    font-size: 10px;
     padding: 5px;
-    width: 60px;
+    width: 85px;
     transition: all 0.5s;
     cursor: pointer;
     /* margin: 30px; */
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
-    /* position: absolute;
-    top: 60%;
-    left: 50%; */
 }
+
   .button:hover span {
     padding-right: 9px;
 }
