@@ -1,219 +1,265 @@
-.cyanspuare{
-    width: 85%;
-    height: 55%;
-    background-color: #f9f9f9;
-    border-radius: 20px;
-    position: relative;
-}
-.rightside {
-    width: 100%;
-    height: 100%;
-    background-color: transparent;
-    position: absolute;
-    right: 0px;
-    border-radius: 20px 20px 20px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-    margin-top: 20px;
-}
-.loginh1 {
-    font-family: 'Aclonica', sans-serif;
-    color: #3a7e99;
-    font-size: 50px;
-    margin: 0px 0px 0px 0px;
-    letter-spacing: -2px;
-}
-.loginh2{
-        margin-top: 0px;
-}
-.formcontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-left: 0px;
-}
-label {
-    font-family: 'Poppins', sans-serif;
-    text-transform: capitalize;
-    color: #3a7e99;
-    font-size: 12px;
-    font-weight: 400;
-}
-#fnamelog, #lnamelog {
-    width: calc(225px/2);
-    color: #06bdde;
-    border: none;
-    border-bottom: 0.1em solid #3a7e99;
-    background: transparent;
-    font-size: 12px;
-    padding: 0px 0px 2px 4px;
-    font-family: 'Poppins', sans-serif;
-}
-#email1 {
-    width: 250px;
-    border: none;
-    border-bottom: 0.1em solid #3a7e99;
-    background: transparent;
-    font-size: 12px;
-    padding: 0px 0px 2px 4px;
-    font-family: 'Poppins', sans-serif;
-    color: #06bdde;
-}
-#password1 {
-    width: 250px;
-    border: none;
-    border-bottom: 0.1em solid #3a7e99;
-    background: transparent;
-    font-size: 12px;
-    padding: 0px 0px 2px 4px;
-    font-family: 'Poppins', sans-serif;
-    color: #06bdde;
-}
-.RemeberForget p {
-    font-family: 'Poppins', sans-serif;
-    color: #3a7e99;
-    font-size: 8px;
-}
-#login {
-    /* background-color: #06adca; */
-    background-color: transparent;
-    color: #06adca;
-    /* border: 2px #3a7e99 solid; */
-    border: none;
-    font-family: 'Poppins', sans-serif;
-    border-radius: 100px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: all 0.3s;
-    padding: 5px 20px;
-    margin-top: 10px;
-}
-.loginh2,
-.RemeberForget p {
-    font-family: 'Poppins', sans-serif;
-    color: #3a7e99;
-    font-size: 12px;
-}
-.loginh2 a {
-    font-family: 'Poppins', sans-serif;
-    color: #3a7e99;
-    font-size: 12px;
-}
-.leftside {
-    width: 60%;
-    height: 100%;
-    position: absolute;
-    left: 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-    display: none;
-}
-.leftside1 div,
-.leftside1{
-    display: none;
-}
+@media  (max-width: 460px){
 
-
-.navbar {
-    width: 96%;
-    margin: auto;
-    padding: 5px 0px 5px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    /* margin: 0px 0px 0px -20px; */
-}
-.wahm{
-    display: none;
-}
-.logo{
-    width: 30.89px;
-    height: 10.93px;
-    cursor: pointer;
-    background-size: 30px;
-    /* size: 100px; */
-    /* padding-left:35px ; */
-}
-.navbar ul li{
-    list-style: none;
-    display: inline-block;
-    margin: 0 10px;
-    position: relative;
-}
-.navbar ul li a{
-    text-decoration: none;
-    color: #fff;
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 500;
-    font-size: 10px;
-}
-.navbar ul li::after{
-    content: "";
-    height: 3px;
-    width: 0;
-    background:#00ccf0 ;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    transition: width 0.5s;
-}
-.navbar ul li:hover::after{
-    width: 100%;
-}
-.content {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    color: #fff;
-    margin-top: 130px;
-    flex-direction: column;
-}
-.content h1{
-    text-transform: uppercase;
-    font-size: 22px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: 800;
-    margin-bottom: 10px;
-}
-.content p{
-        text-transform: capitalize;
-        line-height: 25px;
-        font-size: 10px;
+    .cyanspuare{
+        width: 300px;
+        height: 420px;
+        background-color: transparent;
+        border-radius: 20px;
+    }
+    .rightside{
+        width: 300px;
+        height: 310px;
+        border-radius: 20px;
+        gap: 15px;
+        margin-top: 20px;
+        align-items: center;
+    }
+    .rightside1 {
+        width: 300px;
+        height: 360px;
+        position: absolute;
+        right: 0px;
+        border-radius: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+    .loginh1 {
+        font-family: 'Aclonica', sans-serif;
+        color: #3a7e99;
+        font-size: 50px;
+        margin: 10px 0px 0px 0px;
+        letter-spacing: -2px;
+    }
+    .loginh2{
+            margin-top: 0px;
+    }
+    .formcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0px;
+    }
+    label {
         font-family: 'Poppins', sans-serif;
-        font-weight: 200;
-        margin-bottom: 20px;
-        /* align-items:left ; */
-        /* margin-left: 250px; */
+        text-transform: capitalize;
+        color: #3a7e99;
+        font-size: 12px;
+        font-weight: 400;
+    }
+    #fnamelog, #lnamelog {
+        width: calc(225px/2);
+        color: #06bdde;
+        border: none;
+        border-bottom: 0.1em solid #3a7e99;
+        background: transparent;
+        font-size: 12px;
+        padding: 0px 0px 2px 4px;
+        font-family: 'Poppins', sans-serif;
+    }
+    #email1 {
+        width: 250px;
+        border: none;
+        border-bottom: 0.1em solid #3a7e99;
+        background: transparent;
+        font-size: 12px;
+        padding: 0px 0px 2px 4px;
+        font-family: 'Poppins', sans-serif;
+        color: #06bdde;
+    }
+    #password1 {
+        width: 250px;
+        border: none;
+        border-bottom: 0.1em solid #3a7e99;
+        background: transparent;
+        font-size: 12px;
+        padding: 0px 0px 2px 4px;
+        font-family: 'Poppins', sans-serif;
+        color: #06bdde;
+    }
+    .RemeberForget p {
+        font-family: 'Poppins', sans-serif;
+        color: #3a7e99;
+        font-size: 8px;
+    }
+    #login {
+        /* background-color: #06adca; */
+        background-color: transparent;
+        color: #06adca;
+        /* border: 2px #3a7e99 solid; */
+        border: none;
+        font-family: 'Poppins', sans-serif;
+        border-radius: 100px;
+        font-size: 14px;
+        cursor: pointer;
+        transition: all 0.3s;
+        padding: 5px 20px;
+        margin-top: 10px;
+    }
+    .loginh2,
+    .RemeberForget p {
+        font-family: 'Poppins', sans-serif;
+        color: #3a7e99;
+        font-size: 12px;
+    }
+    .loginh2 a {
+        font-family: 'Poppins', sans-serif;
+        color: #3a7e99;
+        font-size: 12px;
+    }
+    .leftside {
+        width: 60%;
+        height: 100%;
+        position: absolute;
+        left: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        display: none;
+    }
+    .leftside1 div,
+    .leftside1{
+        display: none;
+    }
+    
+    
+    .navbar {
+        width: 96%;
+        margin: auto;
+        padding: 5px 0px 5px 0px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        /* margin: 0px 0px 0px -20px; */
+    }
+    .wahm{
+        display: none;
+    }
+    .logo{
+        width: 30.89px;
+        height: 10.93px;
+        cursor: pointer;
+        background-size: 30px;
+        /* size: 100px; */
+        /* padding-left:35px ; */
+    }
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 0 10px;
+        position: relative;
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 500;
+        font-size: 10px;
+    }
+    .navbar ul li::after{
+        content: "";
+        height: 3px;
+        width: 0;
+        background:#00ccf0 ;
+        position: absolute;
+        left: 0;
+        bottom: -1px;
+        transition: width 0.5s;
+    }
+    .navbar ul li:hover::after{
+        width: 100%;
+    }
+    .content {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        color: #fff;
+        margin-top: 130px;
+        flex-direction: column;
+    }
+    .content h1{
+        text-transform: uppercase;
+        font-size: 22px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: 800;
+        margin-bottom: 10px;
+    }
+    .content p{
+            text-transform: capitalize;
+            line-height: 25px;
+            font-size: 10px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 200;
+            margin-bottom: 20px;
+            /* align-items:left ; */
+            /* margin-left: 250px; */
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 20px;
+    }
+    .button {
+        display: inline-block;
+        border-radius: 50px;
+        background-color: transparent;
+        border: 1px #06adca solid;
+        /* border-color: rgba(207, 119, 18, 0.801); */
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 10px;
+        padding: 5px;
+        width: 85px;
+        transition: all 0.5s;
+        cursor: pointer;
+        /* margin: 30px; */
+        font-family: 'Poppins', sans-serif;
+        font-weight: 400;
+    }
+    
+      .button:hover span {
+        padding-right: 9px;
+    }
 }
-.buttons{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 20px;
-}
-.button {
-    display: inline-block;
-    border-radius: 50px;
-    background-color: transparent;
-    border: 1px #06adca solid;
-    /* border-color: rgba(207, 119, 18, 0.801); */
-    color: #FFFFFF;
-    text-align: center;
-    font-size: 10px;
-    padding: 5px;
-    width: 85px;
-    transition: all 0.5s;
-    cursor: pointer;
-    /* margin: 30px; */
-    font-family: 'Poppins', sans-serif;
-    font-weight: 400;
-}
+@media screen and (max-width: 320px){
+    /* .cyanspuare,
+    .rightside{
+        position: absolute;
+    } */
+    .loginh1{
+        margin: 15px 0 0 0;
+    }
+    .cyanspuare{
+        width: 265px;
+    }
+    .rightside{
+        width: 265px;
+        height: 290px;
+    }
+    .rightside1{
+        width: 265px;
 
-  .button:hover span {
-    padding-right: 9px;
+    }
+    .flcon {
+        gap: 20px;
+    }
+    #fnamelog, #lnamelog{
+        width: calc(200px/2);
+    }
+    #email1,
+    #password1{
+        width: 220px;
+    }
+    label{
+        font-size: 10px;
+    } 
+    .loginh2,
+    .RemeberForget {
+        font-size: 10px;
+    }
 }
