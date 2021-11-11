@@ -497,7 +497,7 @@ body {
     width: 90.86px;
     height: 32.14px;
     cursor: pointer;
-    background-size: 50px;
+    /* background-size: 50px; */
     /* padding-left:35px ; */
     /* margin: 0 0 0 15px; */
 }
